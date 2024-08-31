@@ -1,0 +1,88 @@
+main {
+  width: 50svw;
+  height: 85svh;
+  margin: 0 auto;
+  border: 3px solid rgb(182, 123, 231);
+  display: flex;
+  flex-direction: column;
+align-items: first baseline;
+justify-content: start;
+background-color: rgba(95, 142, 117, 0.7);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(60, 10, 107);
+  margin-left: 17%;
+}
+p {
+  text-align: center;
+}
+
+div {
+  height: 7.5vh;
+}
+
+input {
+  outline:none;
+}
+
+#submitButton {
+  width: 130px;
+  height: 40px;
+  background-color: rgb(210, 155, 214);
+  border-radius: 18px;
+  border-style: ridge;
+  border-color: rgb(22, 22, 128);
+  color: rgb(22, 22, 128);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 27vw;
+}
+
+#submitButton:disabled {
+  background-color: rgb(230, 221, 231);
+  border-color: rgb(151, 151, 217);
+  color: rgb(120, 120, 186);
+  cursor: not-allowed;
+}
+#submitButton:hover:disabled {
+  text-decoration: underline;
+  color: rgb(158, 12, 15);
+}
+
+#submitButton:active {
+  font-weight: 900;
+}
+
+#submitButton:hover {
+  text-decoration: underline;
+  color: rgb(49, 89, 10);
+}
+
+input:not(.radio), select {
+  width: 18vw;
+  height: 3vh;
+  background-color: rgb(158, 240, 240);
+  border-radius: 5px;
+  border-style: none;
+}
+
+#termsOfUse {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #95e0d4;
+  border-radius: 3px;
+  cursor: pointer;
+  float: right;
+}
+
+.error {
+  width: max-content;
+  height: 2vh;
+  color: red;
+  display: block;
+  font-size: medium;
+}

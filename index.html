@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Форма регистрации</h1>
+      <div>
+        <form name="form" novalidate>
+          <label for="name">Ваше имя</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="От 2 до 20 символов"
+            class="focus"
+            required
+          />
+          <span class="error" id="nameError"></span>
+          </div>
+          <div>
+          <label for="email">Адрес электронной почты</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Начните вводить адрес"
+            class="focus"
+            required
+          />
+          <span class="error" id="emailError"></span>
+        </div>
+        <div>
+          <label for="age">Ваш возраст</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="18"
+            max="99"
+            placeholder="Выберите ваш возраст"
+            class="focus"
+            required
+          />
+          <span class="error" id="ageError"></span>
+        </div>
+        <p>Ваш пол:</p>
+        <div>
+          <label for="male">Мужской</label>
+          <input type="radio" class='radio' name="sex" value="male" id="male" checked>
+          <label for="female">Женский</label>
+          <input type="radio" class='radio' name="sex" value="female" id="female">
+        </div>
+        <div>
+          <label for="profession">Ваша профессия</label>
+          <select name="profession" id="profession" class="focus" required>
+            <option value="none" disabled selected hidden>Пожалуйста, выберите из списка ниже</option>
+          <option value="doctor">Врач</option>
+          <option value="programmer">Программист</option>
+          <option value="teacher">Учитель</option>
+          <option value="designer">Дизайнер</option>
+          <option value="engineer">Инженер</option>
+          <option value="seller">Продавец</option>
+          <option value="other">Другое</option>
+        </select>
+        <span class="error" id="professionError"></span>
+        </div>
+        <div>
+          <label for="password">Придумайте пароль</label>
+          <input class="focus" type="password" name="password" id="password" placeholder="Не менее шести символов" required>
+          <span class="error" id="passwordError"></span>
+        </div>
+        <div>
+          <label for="password">Повторите ваш пароль</label>
+          <input class="focus" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Пароли должны совпадать" required>
+          <span class="error" id="passwordRepeatError"></span>
+        </div>
+        <div>
+          <label for="termsOfUse">Для отправки данных на сервер необходимо <br> соглашение на обрабоку персональных данных</label>
+          <input type="checkbox" name="termsOfUse" id="termsOfUse">
+          <span class="error" id="termsOfUseError"></span>
+        </div>
+          <div>
+          <button type="submit" id="submitButton" disabled>Отправить</button>
+        </div>
+        </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
+
